@@ -18,26 +18,8 @@ A comprehensive web-based application for managing events, booking tickets, and 
 - **Booking Management**: View and manage user bookings.
 - **User Management**: View registered users.
 
-## 💳 eSewa Payment Integration
-
-This project features a fully functional **eSewa** payment gateway integration.
-- **Sandbox Environment**: Currently configured for the eSewa test environment.
-- **Workflow**:
-    1. User selects an event and quantity.
-    2. Redirects to eSewa's secure payment page.
-    3. On success, redirects back to `esewa_success.php` and confirms the booking.
-    4. On failure, redirects to `esewa_failure.php`.
-
 ## 📸 Screenshots
 
-<!-- 
-INSTRUCTIONS FOR ADDING SCREENSHOTS:
-1. Create a folder named 'screenshots' in the root directory.
-2. Add your screenshot images to that folder (e.g., home.png, event_detail.png).
-3. Uncomment the lines below and update the filenames to match your images.
--->
-
-<!--
 ### Home Page
 ![Home Page](screenshots/home.png)
 
@@ -49,7 +31,7 @@ INSTRUCTIONS FOR ADDING SCREENSHOTS:
 
 ### Admin Dashboard 
 ![eSewa Payment](screenshots/admin_dashboard.png)
--->
+
 
 ## 🛠️ Tech Stack
 - **Frontend**: HTML, CSS, JavaScript
