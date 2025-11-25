@@ -9,14 +9,13 @@ A comprehensive web-based application for managing events, booking tickets, and 
 - **Search Functionality**: Search for events by name or category.
 - **Ticket Booking**: Easy booking process for selected events.
 - **eSewa Payment**: Secure online payment integration via eSewa.
-- **Booking History**: View past bookings and ticket status.
+- **Purchase History**: View past purchases and ticket status.
 - **User Authentication**: Secure login and registration.
 
 ### Admin Panel
-- **Dashboard**: Overview of total events, bookings, and revenue.
+- **Dashboard**: Overview of total events, purchases, and revenue.
 - **Event Management**: Add, edit, and delete events.
-- **Booking Management**: View and manage user bookings.
-- **User Management**: View registered users.
+- **Purchase Management**: View and manage user purchases.
 
 ## 📸 Screenshots
 
