@@ -1,7 +1,84 @@
-Admin
-username- admin
-password- admin132
+# Events Management System
 
-User
-email- pickle00@gmail.com
-password- 123
+A comprehensive web-based application for managing events, booking tickets, and processing payments securely. This system facilitates seamless interaction between event organizers (admin) and users.
+
+## 🚀 Features
+
+### User Panel
+- **Browse Events**: View a list of upcoming events with details.
+- **Search Functionality**: Search for events by name or category.
+- **Ticket Booking**: Easy booking process for selected events.
+- **eSewa Payment**: Secure online payment integration via eSewa.
+- **Booking History**: View past bookings and ticket status.
+- **User Authentication**: Secure login and registration.
+
+### Admin Panel
+- **Dashboard**: Overview of total events, bookings, and revenue.
+- **Event Management**: Add, edit, and delete events.
+- **Booking Management**: View and manage user bookings.
+- **User Management**: View registered users.
+
+## 💳 eSewa Payment Integration
+
+This project features a fully functional **eSewa** payment gateway integration.
+- **Sandbox Environment**: Currently configured for the eSewa test environment.
+- **Workflow**:
+    1. User selects an event and quantity.
+    2. Redirects to eSewa's secure payment page.
+    3. On success, redirects back to `esewa_success.php` and confirms the booking.
+    4. On failure, redirects to `esewa_failure.php`.
+
+## 📸 Screenshots
+
+<!-- 
+INSTRUCTIONS FOR ADDING SCREENSHOTS:
+1. Create a folder named 'screenshots' in the root directory.
+2. Add your screenshot images to that folder (e.g., home.png, event_detail.png).
+3. Uncomment the lines below and update the filenames to match your images.
+-->
+
+<!--
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Event Details
+![Event Details](screenshots/event_details.png)
+
+### eSewa Payment
+![eSewa Payment](screenshots/payment.png)
+
+### Admin Dashboard 
+![eSewa Payment](screenshots/admin_dashboard.png)
+-->
+
+## 🛠️ Tech Stack
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: PHP
+- **Database**: MySQL
+- **Payment Gateway**: eSewa
+
+## ⚙️ Installation & Setup
+
+1. **Clone the Repository** (or extract the zip):
+   Place the `events_management` folder inside `htdocs` (e.g., `C:\xampp\htdocs\events_management`).
+
+2. **Database Setup**:
+   - Open phpMyAdmin (`http://localhost/phpmyadmin`).
+   - Create a new database named `events_management`.
+   - Import the SQL file located in `database/events_management.sql` (or similar path if available).
+
+3. **Configuration**:
+   - Check `config.php` (or `includes/db.php`) to ensure database credentials match your local setup.
+
+4. **Run the Project**:
+   - Open your browser and go to: `http://localhost/events_management`
+
+## 🔐 Demo Credentials
+
+**Admin**
+- Username: `admin`
+- Password: `admin123`
+
+**User**
+- Email: `pickle00@gmail.com`
+- Password: `123`
