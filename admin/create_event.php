@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="sidebar">
         <div class="logo">
             <div class="logo-icon"></div>
-            <span class="logo-text">Ticketeer</span>
+            <span class="logo-text">Ticketly</span>
         </div>
 
         <a href="index.php" class="nav-item">

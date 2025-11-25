@@ -1,7 +1,7 @@
 <div class="sidebar">
     <div class="logo">
         <div class="logo-icon"></div>
-        <span class="logo-text">Ticketeer</span>
+        <span class="logo-text">Ticketly</span>
     </div>
 
     <a href="events.php" class="nav-item">

@@ -49,7 +49,7 @@ $result = mysqli_query($conn, $sql);
     <div class="sidebar">
         <div class="logo">
             <div class="logo-icon"></div>
-            <span class="logo-text">Ticketeer</span>
+            <span class="logo-text">Ticketly</span>
         </div>
 
         <a href="index.php" class="nav-item">

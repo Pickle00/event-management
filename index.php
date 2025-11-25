@@ -22,7 +22,7 @@ if (isset($_GET['search'])) {
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav_bar.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>TicketMaster - Discover Your Next Unforgettable Experience</title>
+    <title>Ticketly - Discover Your Next Unforgettable Experience</title>
 </head>
 
 <body>
