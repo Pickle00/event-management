@@ -38,6 +38,6 @@
     </div>
 
     <div class="footer-bottom">
-        © 2024 TicketMaster. All rights reserved.
+        © 2024 Ticketly. All rights reserved.
     </div>
 </footer>
