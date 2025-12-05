@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 25, 2025 at 05:17 PM
+-- Generation Time: Dec 05, 2025 at 03:29 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -67,10 +67,10 @@ CREATE TABLE `events` (
 INSERT INTO `events` (`id`, `title`, `description`, `start_date`, `end_date`, `location`, `image`, `map_iframe`, `status`, `created_at`) VALUES
 (1, 'Annual Tech Conference 2024', 'A premier technology conference', '2024-10-26 09:00:00', '2024-10-26 18:00:00', 'Convention Center', 'uploads/event_6923f224a3a9b3.81755462.jpg', '', 'Upcoming', '2025-11-09 07:28:16'),
 (2, 'Summer Music Festival', 'Three days of amazing music', '2024-08-15 12:00:00', '2024-08-17 23:00:00', 'Central Park', 'uploads/event_6923f22ed0ad62.09072691.jpg', '', 'Upcoming', '2025-11-09 07:28:16'),
-(3, 'Product Design Workshop', 'Learn modern product design', '2024-11-05 10:00:00', '2024-11-05 16:00:00', 'Online', 'uploads/event_6923f21855ac28.53448748.jpg', '', 'Upcoming', '2025-11-09 07:28:16'),
+(3, 'Jazz Nights Live', 'Experience a soulful evening of jazz with international and local artists.', '2024-11-05 10:00:00', '2024-11-05 16:00:00', 'Blue Note Lounge, Pokhara', 'uploads/event_693299792ceb07.46123119.jpg', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.987654321!2d83.982123!3d28.209123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39979a123456789%3A0xabcdef1234567890!2sBlue%20Note%20Lounge%2C%20Pokhara!5e0!3m2!1sen!2snp!4v1700000000001\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>', 'Upcoming', '2025-11-09 07:28:16'),
 (4, 'Charity Gala 2024', 'An elegant evening', '2024-09-20 19:00:00', '2024-09-20 23:00:00', 'Grand Ballroom', 'uploads/event_6923f239c9f628.43910844.jpg', '', 'Upcoming', '2025-11-09 07:28:16'),
 (5, 'Twenty One Pilots Live in Kathmandu', 'Join us for an electrifying night as the Grammy-winning duo Twenty One Pilots take the stage in Kathmandu. Expect a high-energy performance, hits from their catalogue, immersive visuals, and an unforgettable experience for fans of alternative rock and indie pop. Located in the heart of the city, this concert will bring their signature blend of rap, rock, and theatrical flair to Nepal for the first time. Whether you’re a longtime fan or new to their music, get ready for an immersive show.', '2025-11-12 20:30:00', '2025-11-12 21:30:00', 'Thamel, Kathmandu, Nepal', 'uploads/event_69234d85da7601.05080627.jpg', '<iframe src=\"https://www.google.com/maps/embed?pb=...\" width=\"100%\" height=\"350\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>\r\n', 'Upcoming', '2025-11-11 14:55:37'),
-(7, 'test', 'test', '2025-11-25 23:49:00', '2025-11-27 13:51:00', 'TestTest', 'uploads/event_69234cc2b8b0d1.74420745.jpg', '', 'Upcoming', '2025-11-23 18:04:50');
+(7, 'Rock Fiesta 2025', 'Join the ultimate rock music celebration with top bands from around the world.', '2025-11-25 23:49:00', '2025-11-27 13:51:00', 'Grand Arena, Kathmandu', 'uploads/event_69234cc2b8b0d1.74420745.jpg', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.123456789!2d85.324123!3d27.701234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190f1234567%3A0xabcdef1234567890!2sGrand%20Arena%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1700000000000\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>', 'Upcoming', '2025-11-23 18:04:50');
 
 -- --------------------------------------------------------
 
@@ -106,7 +106,11 @@ INSERT INTO `orders` (`id`, `user_id`, `event_id`, `ticket_type_id`, `quantity`,
 (3, 1, 5, NULL, NULL, NULL, 100.00, 5.00, 2.50, 107.50, 'pending', 'esewa', NULL, 'pending', '2025-11-23 17:03:32'),
 (4, 1, 5, NULL, NULL, NULL, 100.00, 5.00, 2.50, 107.50, 'paid', 'esewa', '000D3PD', 'completed', '2025-11-22 18:15:00'),
 (5, 1, 5, NULL, NULL, NULL, 100.00, 10.00, NULL, 110.00, 'paid', 'esewa', '000D3UE', 'completed', '2025-11-22 18:15:00'),
-(6, 1, 5, NULL, NULL, NULL, 200.00, 10.00, NULL, 210.00, 'paid', 'esewa', '000D3UG', 'completed', '2025-11-23 17:09:15');
+(6, 1, 5, NULL, NULL, NULL, 200.00, 10.00, NULL, 210.00, 'paid', 'esewa', '000D3UG', 'completed', '2025-11-23 17:09:15'),
+(7, 1, 5, NULL, NULL, NULL, 50.00, 10.00, NULL, 60.00, 'pending', 'esewa', NULL, 'pending', '2025-11-25 16:41:28'),
+(8, 1, 5, NULL, NULL, NULL, 50.00, 10.00, NULL, 60.00, 'pending', 'esewa', NULL, 'pending', '2025-12-05 04:09:30'),
+(9, 1, 5, NULL, NULL, NULL, 100.00, 10.00, NULL, 110.00, 'paid', 'esewa', '000D87E', 'completed', '2025-12-05 07:55:36'),
+(10, 2, 5, NULL, NULL, NULL, 50.00, 10.00, NULL, 60.00, 'paid', 'esewa', '000D87V', 'completed', '2025-12-05 08:43:00');
 
 -- --------------------------------------------------------
 
@@ -133,7 +137,11 @@ INSERT INTO `order_items` (`id`, `order_id`, `ticket_type_id`, `quantity`, `pric
 (3, 3, 5, 2, 50.00, '2025-11-23 09:36:44'),
 (4, 4, 5, 2, 50.00, '2025-11-23 09:39:51'),
 (5, 5, 5, 2, 50.00, '2025-11-23 16:57:03'),
-(6, 6, 5, 4, 50.00, '2025-11-23 17:09:15');
+(6, 6, 5, 4, 50.00, '2025-11-23 17:09:15'),
+(7, 7, 5, 1, 50.00, '2025-11-25 16:41:28'),
+(8, 8, 5, 1, 50.00, '2025-12-05 04:09:30'),
+(9, 9, 5, 2, 50.00, '2025-12-05 07:55:36'),
+(10, 10, 5, 1, 50.00, '2025-12-05 08:43:00');
 
 -- --------------------------------------------------------
 
@@ -159,7 +167,7 @@ INSERT INTO `ticket_types` (`id`, `event_id`, `ticket_name`, `price`, `quantity`
 (2, 2, 'General Admission', 75.00, 2500, 2500),
 (3, 3, 'General Admission', 30.00, 50, 15),
 (4, 4, 'General Admission', 100.00, 200, 0),
-(5, 5, 'General Admission', 50.00, 500, 8),
+(5, 5, 'General Admission', 50.00, 500, 11),
 (7, 7, 'General Admission', 50.00, 500, 0);
 
 -- --------------------------------------------------------
@@ -181,7 +189,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `created_at`) VALUES
-(1, 'Pickle', 'pickle00@gmail.com', '123', '2025-11-11 14:28:49');
+(1, 'Pickle', 'pickle00@gmail.com', '123', '2025-11-11 14:28:49'),
+(2, 'Noah', 'nikita@gmail.com', '123', '2025-12-05 08:42:27');
 
 --
 -- Indexes for dumped tables
@@ -247,13 +256,13 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `ticket_types`
@@ -265,7 +274,7 @@ ALTER TABLE `ticket_types`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
