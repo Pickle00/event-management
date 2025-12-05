@@ -33,7 +33,7 @@ if (!$order) {
 // Generate eSewa payment data
 $payment_data = generateEsewaPaymentData(
     $order['total'],
-    'ORDER-' . $order_id,
+    'ORDER-' . $order_id . '-' . time(),
     $order['event_title']
 );
 ?>

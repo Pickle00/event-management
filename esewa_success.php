@@ -26,7 +26,13 @@ if (!$decoded_data) {
 }
 
 $transaction_uuid = isset($decoded_data['transaction_uuid']) ? $decoded_data['transaction_uuid'] : '';
-$order_id = str_replace('ORDER-', '', $transaction_uuid);
+// OLD: $order_id = str_replace('ORDER-', '', $transaction_uuid);
+
+// NEW: Extract order ID from "ORDER-{order_id}-{timestamp}"
+$temp_id = str_replace('ORDER-', '', $transaction_uuid);
+$parts = explode('-', $temp_id);
+$order_id = intval($parts[0]);
+
 $amount = isset($decoded_data['total_amount']) ? str_replace(',', '', $decoded_data['total_amount']) : 0;
 $refId = isset($decoded_data['transaction_code']) ? $decoded_data['transaction_code'] : '';
 
